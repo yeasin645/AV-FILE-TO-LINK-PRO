@@ -12,3 +12,4 @@ psutil
 jinja2
 pytz
 shortzy
+pymongo
