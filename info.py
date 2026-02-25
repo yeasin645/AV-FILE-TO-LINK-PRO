@@ -62,12 +62,12 @@ IS_SHORTLINK = is_enabled(environ.get('IS_SHORTLINK', "True"), True)
 
 # Verification Config
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 60)) # In Minutes/Hours based on logic
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'mdiskshortner.link')
-SHORTLINK_API = environ.get('SHORTLINK_API', '96a3c0e8ae1b1abd429906762e38a40d3f2ec56c')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'urlbotsot.vercel.app')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'akashdeveloper')
 
 # Second Verification Config
-SHORTLINK_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "mdiskshortner.link")
-SHORTLINK_API2 = environ.get("SHORTENER_API2", "96a3c0e8ae1b1abd429906762e38a40d3f2ec56c")
+SHORTLINK_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", "urlbotsot.vercel.app")
+SHORTLINK_API2 = environ.get("SHORTENER_API2", "akashdeveloper")
 
 # =========================================================
 # ⚙️ SETTINGS & LIMITS
@@ -83,8 +83,8 @@ SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
 RATE_LIMIT_TIMEOUT = int(environ.get("RATE_LIMIT_TIMEOUT", "600"))
 
 # File Limits
-MAX_FILES = int(environ.get("MAX_FILES", "5"))
-BATCH_LIMIT = int(environ.get('BATCH_LIMIT', 60))
+MAX_FILES = int(environ.get("MAX_FILES", "500"))
+BATCH_LIMIT = int(environ.get('BATCH_LIMIT', 600))
 
 # =========================================================
 # 🖼️ MEDIA & CAPTIONS
@@ -100,8 +100,8 @@ FILE_CAPTION = environ.get('FILE_CAPTION', script.CAPTION)
 # =========================================================
 # 🌐 SERVER & APP CONFIG
 # =========================================================
-WORKERS = int(getenv('WORKERS', '4'))
-MULTI_CLIENT = False
+WORKERS = int(getenv('WORKERS', '40'))
+MULTI_CLIENT = True
 name = str(environ.get('name', 'avbotz'))
 
 # Heroku & Port Config
