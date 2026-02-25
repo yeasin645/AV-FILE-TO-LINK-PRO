@@ -26,7 +26,7 @@ OWNER_USERNAME = environ.get("OWNER_USERNAME", 'BOT_OWNER26')
 # =========================================================
 # 🗄️ DATABASE CONNECTION
 # =========================================================
-DB_URL = environ.get('DATABASE_URI', "mongodb+srv://teshsjsg1:axxxxtz@testing.kwuyhwka.mongodb.net/?appName=testing")
+DB_URL = environ.get('DATABASE_URI', "mongodb+srv://giwola4978_db_user:WGMPdGRHpJru1TME@cluster0.zchzexy.mongodb.net/?appName=Cluster0")
 DB_NAME = environ.get('DATABASE_NAME', "testing")
 
 # =========================================================
