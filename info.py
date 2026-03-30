@@ -95,7 +95,7 @@ AUTH_PICS = environ.get('AUTH_PICS', 'https://envs.sh/AwV.jpg')
 PICS = environ.get('PICS', 'https://ibb.co/VpTJNNCN')
 FILE_PIC = environ.get('FILE_PIC', 'https://i.ibb.co/bj4My0bW/photo-2025-07-21-02-15-21-7529360175656861700.jpg')
 
-# Error Fix: Defined the missing variable here
+# --- নিচের এই দুটি লাইন আপনার এররটি সমাধান করবে ---
 CHANNEL_FILE_CAPTION = environ.get('CHANNEL_FILE_CAPTION', script.CAPTION)
 FILE_CAPTION = environ.get('FILE_CAPTION', script.CAPTION)
 
@@ -120,7 +120,6 @@ HAS_SSL = is_enabled(getenv("HAS_SSL", "False"), False)
 BIND_ADDRESS = getenv("WEB_SERVER_BIND_ADDRESS", "127.0.0.1")
 
 # URL Generation
-# Use provided URL from env, or generate based on FQDN/IP
 custom_url = environ.get("URL")
 if custom_url:
     URL = custom_url
@@ -130,6 +129,6 @@ else:
     PORT_SEGMENT = "" if NO_PORT else f":{PORT}"
     URL = f"{PROTOCOL}://{FQDN}{PORT_SEGMENT}/"
 
-# Default fallback if nothing works (Matches your provided koyeb link)
+# Default fallback if nothing works
 if not URL or URL == "/":
     URL = "https://forward-jolyn-vnnmbs-62200c9e.koyeb.app/"
