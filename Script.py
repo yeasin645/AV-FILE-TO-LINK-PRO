@@ -82,7 +82,10 @@ class script(object):
 /delete_pass - ᴅᴇʟᴇᴛᴇ ᴀ sᴘᴇᴄɪꜰɪᴄ ᴘᴀssᴡᴏʀᴅ
 </b>"""
 
+    # Fix: Defined multiple versions of Caption to prevent "not defined" error
     CAPTION = """🎬 <i><a href='{}'>{}</a></i>"""
+    CHANNEL_FILE_CAPTION = """🎬 <i><a href='{}'>{}</a></i>"""
+    FILE_CAPTION = """🎬 <i><a href='{}'>{}</a></i>"""
     
     LOG_TEXT = """<b>#ɴᴇᴡᴜsᴇʀ {}
     
@@ -103,7 +106,7 @@ class script(object):
 
     🗂️ ᴄᴏɴᴛᴇɴᴛ ᴅᴀᴛᴀ
     • ᴛᴏᴛᴀʟ ꜰɪʟᴇs      : <code>{total_files}</code>
-    • ᴘʀᴏᴛᴇᴄᴛᴇᴅ ʟɪɴᴋs : <code>{total_links}</code>
+    • ᴘʀᴇᴛᴇᴄᴛᴇᴅ ʟɪɴᴋs : <code>{total_links}</code>
     • ʙʟᴏᴄᴋᴇᴅ ᴄʜᴀɴɴᴇʟs : <code>{blocked_channels}</code>
 
     🖥️ sᴇʀᴠᴇʀ sᴛᴀᴛᴜs
@@ -196,7 +199,7 @@ class script(object):
 <b>ʜᴇʏ {} 👋,</b>
 
 <blockquote>🔒 <b>ʏᴏᴜʀ ꜰʀᴇᴇ ᴛʀɪᴀʟ ʜᴀs ᴇxᴘɪʀᴇᴅ!</b>
-<i>ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀɴᴅ sᴛʀᴇᴀᴍɪɴɢ ꜰɪʟᴇs, ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ᴄᴏᴍᴘʟᴇᴛᴇ ᴀ <b>1-ᴍɪɴᴜᴛᴇ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ</b>.</i></blockquote>
+<i>ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ᴀɴᴅ sᴛʀᴇᴀᴍɪɴɢ ꜰɪʟᴇs, ʏᴏᴜ ɴᴇᴇᴅ ᴛᴏ ᴄᴏᴍᴘʟᴇᴛᴇ a <b>1-ᴍɪɴᴜᴛᴇ ᴠᴇʀɪꜰɪᴄᴀᴛɪᴏɴ</b>.</i></blockquote>
 
 🚀 <b>ɪᴛ's ꜰᴀsᴛ & ꜰʀᴇᴇ!</b>
 <i>ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ᴠᴇʀɪꜰʏ ᴀɴᴅ ɢᴇᴛ ᴜɴʟɪᴍɪᴛᴇᴅ ᴀᴄᴄᴇss ꜰᴏʀ ᴛʜᴇ ɴᴇxᴛ <b>{}</b>.</i>"""
@@ -248,7 +251,7 @@ class script(object):
 💸 <b>ᴜᴘɪ ɪᴅ:</b> <code>.......</code> (ᴛᴀᴘ ᴛᴏ ᴄᴏᴘʏ)
 
 📸 <i>sᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ sᴄʀᴇᴇɴsʜᴏᴛ ᴛᴏ ᴀᴅᴍɪɴ ꜰᴏʀ ᴀᴄᴛɪᴠᴀᴛɪᴏɴ.</i>
-🏷️ <a href='https://t.me/AkashDeveloperBot'>ᴄʜᴇᴄᴋ ᴘʀᴇᴍɪᴜᴍ ᴘʀᴏᴏꜰs</a>"""
+🏷️ <a href='https://t.me/AkashDeveloperBot'>ᴄʜᴇᴄᴋ ᴘʀᴇᴍɪᴜᴍ ᴘʀᴏᴏَفs</a>"""
     
     PREMIUM_TEXT = """<b>👑 <u>ᴘʀᴇᴍɪᴜᴍ sᴛᴀᴛᴜs</u></b>
 
@@ -264,4 +267,3 @@ class script(object):
 ✅ <b>ᴘʀɪᴏʀɪᴛʏ sᴜᴘᴘᴏʀᴛ (24/7)</b>
 
 ⏳ <i>ᴄʜᴇᴄᴋ ʏᴏᴜʀ ᴘʟᴀɴ ᴠᴀʟɪᴅɪᴛʏ: /myplan</i>"""
-    
