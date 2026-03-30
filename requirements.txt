@@ -1,6 +1,6 @@
-Pyrofork==2.3.48
+pyrofork
 tgcrypto
-pymongo[srv]==3.12
+pymongo[srv]
 aiohttp
 python-dotenv
 motor
@@ -12,4 +12,3 @@ psutil
 jinja2
 pytz
 shortzy
-pymongo
