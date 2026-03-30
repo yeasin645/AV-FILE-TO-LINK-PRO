@@ -95,6 +95,8 @@ AUTH_PICS = environ.get('AUTH_PICS', 'https://envs.sh/AwV.jpg')
 PICS = environ.get('PICS', 'https://ibb.co/VpTJNNCN')
 FILE_PIC = environ.get('FILE_PIC', 'https://i.ibb.co/bj4My0bW/photo-2025-07-21-02-15-21-7529360175656861700.jpg')
 
+# Error Fix: Defined the missing variable here
+CHANNEL_FILE_CAPTION = environ.get('CHANNEL_FILE_CAPTION', script.CAPTION)
 FILE_CAPTION = environ.get('FILE_CAPTION', script.CAPTION)
 
 # =========================================================
@@ -131,4 +133,3 @@ else:
 # Default fallback if nothing works (Matches your provided koyeb link)
 if not URL or URL == "/":
     URL = "https://forward-jolyn-vnnmbs-62200c9e.koyeb.app/"
-    
