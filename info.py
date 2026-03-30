@@ -95,9 +95,9 @@ AUTH_PICS = environ.get('AUTH_PICS', 'https://envs.sh/AwV.jpg')
 PICS = environ.get('PICS', 'https://ibb.co/VpTJNNCN')
 FILE_PIC = environ.get('FILE_PIC', 'https://i.ibb.co/bj4My0bW/photo-2025-07-21-02-15-21-7529360175656861700.jpg')
 
-# --- নিচের এই দুটি লাইন আপনার এররটি সমাধান করবে ---
-CHANNEL_FILE_CAPTION = environ.get('CHANNEL_FILE_CAPTION', script.CAPTION)
+# Error Fix: These lines must be present together
 FILE_CAPTION = environ.get('FILE_CAPTION', script.CAPTION)
+CHANNEL_FILE_CAPTION = environ.get('CHANNEL_FILE_CAPTION', script.CAPTION)
 
 # =========================================================
 # 🌐 SERVER & APP CONFIG
