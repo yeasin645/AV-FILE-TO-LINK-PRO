@@ -95,9 +95,11 @@ AUTH_PICS = environ.get('AUTH_PICS', 'https://envs.sh/AwV.jpg')
 PICS = environ.get('PICS', 'https://ibb.co/VpTJNNCN')
 FILE_PIC = environ.get('FILE_PIC', 'https://i.ibb.co/bj4My0bW/photo-2025-07-21-02-15-21-7529360175656861700.jpg')
 
-# Error Prevention: Defying both caption variables to fix the error
-FILE_CAPTION = environ.get('FILE_CAPTION', script.CAPTION if hasattr(script, 'CAPTION') else "")
-CHANNEL_FILE_CAPTION = environ.get('CHANNEL_FILE_CAPTION', script.CAPTION if hasattr(script, 'CAPTION') else "")
+# --- সংশোধিত ক্যাপশন সেকশন ---
+FILE_CAPTION = environ.get('FILE_CAPTION', "📂 <b>ꜰɪʟᴇ ɴᴀᴍᴇ:</b> <code>{}</code>")
+
+# সরাসরি এখানে বাটন ক্যাপশন ভেরিয়েবল সেট করা হলো যাতে এরর না আসে
+CHANNEL_FILE_CAPTION = environ.get('CHANNEL_FILE_CAPTION', "🎬 <b>{}</b>\n\n📂 <b>ꜰɪʟᴇ ɴᴀᴍᴇ:</b> <code>{}</code>\n\n✨ <i>ᴊᴏɪɴ ᴏᴜʀ ᴄʜᴀɴɴᴇʟ ꜰᴏʀ ᴍᴏʀᴇ ᴜᴘᴅᴀᴛᴇs!</i>")
 
 # =========================================================
 # 🌐 SERVER & APP CONFIG
